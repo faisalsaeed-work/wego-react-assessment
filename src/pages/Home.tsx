@@ -6,6 +6,7 @@ import { useFilters, useRestaurantFoods } from '../services/Home.service';
 const Home: FC = () => {
     const { filters, handleSelectCategory, handleSearchKeyword } = useFilters();
     const { restaurantFoods, onClickShowMore, isNextPage } = useRestaurantFoods(filters);
+    
     return <>
         <div className="search">
             <i className="fas fa-search" />
